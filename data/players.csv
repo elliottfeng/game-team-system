@@ -1,13 +1,13 @@
 游戏ID,游戏职业,已选择
 玖伍贰柒,大理,False
 素手挽清风,大理,False
-Boom爆爆,大理,True
+Boom爆爆,大理,False
 不摆烂的人,大理,False
 朝Zhao歌。,大理,False
 臣宝,大理,True
 春水映梨花,大理,False
 东、羽化仙游,大理,True
-冬瓜矮穷了、,大理,True
+冬瓜矮穷了、,大理,False
 段先生、,大理,False
 风雨醉逍遥,大理,False
 烽火戏诸侯,大理,False
@@ -58,8 +58,8 @@ Calm、,峨眉,False
 若兮、,峨眉,False
 鲨鱼大海,峨眉,False
 山水有相逢,峨眉,False
-时光丨同学,峨眉,True
-帅里帅气了,峨眉,True
+时光丨同学,峨眉,False
+帅里帅气了,峨眉,False
 司琴烟雨,峨眉,False
 随风安逸,峨眉,False
 玩的是毒奶,峨眉,False
@@ -92,7 +92,7 @@ gram问天,丐帮,False
 桓³,无尘,False
 金条,无尘,False
 锦鲤...,无尘,False
-南浔、,无尘,True
+南浔、,无尘,False
 浓睡不消残酒、,无尘,False
 平凡老哥来对掌,无尘,True
 小晨、,无尘,False
@@ -125,7 +125,7 @@ gram问天,丐帮,False
 单纯de女王陛下,星宿,False
 恩赐解脱。,星宿,False
 酒香漫四海,星宿,False
-懒虫起床了、,星宿,True
+懒虫起床了、,星宿,False
 摩雾绕空山、,星宿,False
 希希、,星宿,False
 相见不如怀念,星宿,False
@@ -168,12 +168,12 @@ King、,大理,False
 洵儿,大理,False
 叶子,大理,False
 夜·神,大理,False
-一笑星辰落,大理,False
+一笑星辰落,大理,True
 元.帅,大理,False
 战龙魂,大理,False
 浊酒恋青灯,大理,False
 无双,峨眉,False
-星落灬,峨眉,False
+星落灬,峨眉,True
 24小时不可更改,峨眉,False
 AAA,峨眉,False
 Da奎,峨眉,False
@@ -213,7 +213,7 @@ hhhhxxxxf,峨眉,False
 烟花易冷,峨眉,False
 叶訫,峨眉,False
 一笔落于東·,峨眉,False
-一星宇一,峨眉,False
+一星宇一,峨眉,True
 胤宸,峨眉,False
 樱桃小丸子,峨眉,False
 重新再来,峨眉,False
@@ -231,7 +231,7 @@ Poison亦慕,明教,False
 孤影,天山,False
 一澜晚风,天山,False
 星辰辰几何,无尘,False
-星期天灬,无尘,False
+星期天灬,无尘,True
 Taurus灬凉城,无尘,False
 メ…、凌云,无尘,False
 阿珂,无尘,False
@@ -264,8 +264,8 @@ Taurus灬凉城,无尘,False
 成双,逍遥,False
 大寒,逍遥,False
 鸿…炎,逍遥,False
-咖啡灬,逍遥,False
-沐沐,逍遥,False
+咖啡灬,逍遥,True
+沐沐,逍遥,True
 人间惆怅客,逍遥,False
 我刘亦菲呀,逍遥,False
 无痕。,逍遥,False
@@ -287,3 +287,4 @@ Taurus灬凉城,无尘,False
 玩的是寂寞,无尘,False
 八级大,天山,False
 少妇入我心,大理,False
+朝歌Zhao,武当,False
