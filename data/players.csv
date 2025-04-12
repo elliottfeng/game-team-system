@@ -63,7 +63,7 @@ Calm、,峨眉,False
 司琴烟雨,峨眉,False
 随风安逸,峨眉,False
 玩的是毒奶,峨眉,False
-星月,峨眉,True
+星月,峨眉,False
 凶猛定中求针对,峨眉,True
 雅痞,峨眉,False
 一杯酒，敬过往,峨眉,False
@@ -77,7 +77,7 @@ gram问天,丐帮,False
 沉3,明教,False
 二两桃花,明教,False
 天真无邪。,明教,False
-无敌是我是无敌,明教,True
+无敌是我是无敌,明教,False
 紫龙王,巧帮,False
 冬瓜子,天山,False
 朗朗、,天山,False
@@ -169,7 +169,7 @@ King、,大理,False
 叶子,大理,False
 夜·神,大理,False
 一笑星辰落,大理,False
-元.帅,大理,True
+元.帅,大理,False
 战龙魂,大理,False
 浊酒恋青灯,大理,False
 无双,峨眉,False
@@ -197,7 +197,7 @@ hhhhxxxxf,峨眉,False
 落羽,峨眉,False
 芒种,峨眉,False
 麽,峨眉,False
-南鸢,峨眉,False
+南鸢,峨眉,True
 胖头鱼的胖老公 ,峨眉,False
 浦城丹桂,峨眉,False
 青筱,峨眉,False
@@ -207,7 +207,7 @@ hhhhxxxxf,峨眉,False
 太阳当空照、,峨眉,False
 晚风拂春雪·,峨眉,False
 舞舞舞,峨眉,False
-逍遥人世欢,峨眉,False
+逍遥人世欢,峨眉,True
 小阿柒、,峨眉,False
 小灯火,峨眉,False
 烟花易冷,峨眉,False
@@ -215,14 +215,14 @@ hhhhxxxxf,峨眉,False
 一笔落于東·,峨眉,False
 一星宇一,峨眉,False
 胤宸,峨眉,False
-樱桃小丸子,峨眉,True
+樱桃小丸子,峨眉,False
 重新再来,峨眉,False
 周慧敏,峨眉,False
 百事可乐,丐帮,False
 Poison亦慕,明教,False
-阁主,明教,True
+阁主,明教,False
 酒仙戒酒了,明教,False
-魔·夜神,明教,True
+魔·夜神,明教,False
 三横壹墅,明教,False
 提刀走四方,明教,False
 小白变帅了,明教,False
@@ -234,7 +234,7 @@ Poison亦慕,明教,False
 星期天灬,无尘,False
 Taurus灬凉城,无尘,False
 メ…、凌云,无尘,False
-阿珂,无尘,False
+阿珂,无尘,True
 不入魔的龍,无尘,False
 残梦,无尘,False
 策马西风,无尘,False
@@ -254,7 +254,7 @@ Taurus灬凉城,无尘,False
 无趣的大人,无尘,False
 秋天 De风,武当,False
 初一、,武当,False
-风吹过八千里,武当,False
+风吹过八千里,武当,True
 枯树的花语,武当,False
 蓦然相守,武当,False
 骑蜗牛的俊少,武当,False
@@ -267,7 +267,7 @@ Taurus灬凉城,无尘,False
 咖啡灬,逍遥,False
 沐沐,逍遥,False
 人间惆怅客,逍遥,False
-我刘亦菲呀,逍遥,False
+我刘亦菲呀,逍遥,True
 无痕。,逍遥,False
 熙飏,逍遥,False
 依依,逍遥,False
@@ -275,7 +275,7 @@ Taurus灬凉城,无尘,False
 不游泳的鱼,星宿,False
 你凶我更凶,星宿,False
 柠檬味的梦,星宿,False
-三哥灬,星宿,False
+三哥灬,星宿,True
 星河盛世,星宿,False
 一身逍遥踏天风,星宿,False
 昨夜雨疏风骤,星宿,False
