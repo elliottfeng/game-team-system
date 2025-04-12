@@ -3,7 +3,7 @@
 素手挽清风,大理,False
 Boom爆爆,大理,False
 不摆烂的人,大理,False
-朝Zhao歌。,大理,True
+朝Zhao歌。,大理,False
 臣宝,大理,True
 春水映梨花,大理,False
 东、羽化仙游,大理,True
@@ -20,7 +20,7 @@ Boom爆爆,大理,False
 暮冬。,大理,False
 赛罗,大理,False
 是你的仙。,大理,False
-桃花、,大理,True
+桃花、,大理,False
 天真无暇。,大理,False
 挽星,大理,True
 我想娶你,大理,False
@@ -30,7 +30,7 @@ Boom爆爆,大理,False
 应天·玄武策士,大理,False
 英英美戴子,大理,False
 袁方,大理,False
-月亮加点甜，,大理,True
+月亮加点甜，,大理,False
 再圆十耀柠檬糖,大理,True
 飘渺,峨眉,False
 Calm、,峨眉,False
@@ -38,7 +38,7 @@ Calm、,峨眉,False
 冰雨.,峨眉,False
 脆弱酸菜求保护,峨眉,True
 尔尔,峨眉,False
-河图、,峨眉,True
+河图、,峨眉,False
 红、雁东南飞,峨眉,False
 虎妞惊寒御,峨眉,False
 挥戈返日,峨眉,False
@@ -86,7 +86,7 @@ gram问天,丐帮,False
 扇扇扇耳光,天山,False
 俗啪海派泡泡龙,天山,False
 一俄系乌拉酱,天山,False
-被被,无尘,True
+被被,无尘,False
 大碗饭,无尘,False
 大威天龙O_O,无尘,False
 桓³,无尘,False
@@ -168,12 +168,12 @@ King、,大理,False
 洵儿,大理,False
 叶子,大理,False
 夜·神,大理,False
-一笑星辰落,大理,False
+一笑星辰落,大理,True
 元.帅,大理,False
 战龙魂,大理,False
 浊酒恋青灯,大理,False
 无双,峨眉,False
-星落灬,峨眉,False
+星落灬,峨眉,True
 24小时不可更改,峨眉,False
 AAA,峨眉,False
 Da奎,峨眉,False
@@ -213,7 +213,7 @@ hhhhxxxxf,峨眉,False
 烟花易冷,峨眉,False
 叶訫,峨眉,False
 一笔落于東·,峨眉,False
-一星宇一,峨眉,False
+一星宇一,峨眉,True
 胤宸,峨眉,False
 樱桃小丸子,峨眉,False
 重新再来,峨眉,False
@@ -231,7 +231,7 @@ Poison亦慕,明教,False
 孤影,天山,False
 一澜晚风,天山,False
 星辰辰几何,无尘,False
-星期天灬,无尘,False
+星期天灬,无尘,True
 Taurus灬凉城,无尘,False
 メ…、凌云,无尘,False
 阿珂,无尘,False
@@ -264,8 +264,8 @@ Taurus灬凉城,无尘,False
 成双,逍遥,False
 大寒,逍遥,False
 鸿…炎,逍遥,False
-咖啡灬,逍遥,False
-沐沐,逍遥,False
+咖啡灬,逍遥,True
+沐沐,逍遥,True
 人间惆怅客,逍遥,False
 我刘亦菲呀,逍遥,False
 无痕。,逍遥,False
@@ -285,5 +285,5 @@ Taurus灬凉城,无尘,False
 山河是故人,玄机,False
 哲…、兮,玄机,False
 玩的是寂寞,无尘,False
-八级大,天山,True
+八级大,天山,False
 少妇入我心,大理,False
