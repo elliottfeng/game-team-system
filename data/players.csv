@@ -9,9 +9,9 @@ Boom爆爆,大理,False
 东、羽化仙游,大理,True
 冬瓜矮穷了、,大理,False
 段先生、,大理,False
-风雨醉逍遥,大理,False
-烽火戏诸侯,大理,False
-花间二壶酒,大理,False
+风雨醉逍遥,大理,True
+烽火戏诸侯,大理,True
+花间二壶酒,大理,True
 酒梦恋痴狂,大理,False
 橘、耀姿天邑,大理,True
 麻辣小库袜,大理,False
@@ -47,7 +47,7 @@ Calm、,峨眉,False
 可琴烟雨,峨眉,False
 龙王求雨,峨眉,False
 漫漫、,峨眉,False
-萌萌。,峨眉,False
+萌萌。,峨眉,True
 慕慕,峨眉,False
 楠3,峨眉,False
 欧系法克酱,峨眉,False
@@ -114,7 +114,7 @@ gram问天,丐帮,False
 卧龙、,武当,False
 鲜果果子,武当,False
 烟雨挽瑟瑟,武当,False
-执手听风吟、,武当,False
+执手听风吟、,武当,True
 地瓜子,逍遥,False
 乖猫、,逍遥,True
 交大李相赫,逍遥,False
@@ -252,7 +252,7 @@ Taurus灬凉城,无尘,False
 往事随风吹,无尘,False
 我大哥刘华强,无尘,False
 无趣的大人,无尘,False
-秋天 De风,武当,False
+秋天 De风,武当,True
 初一、,武当,False
 风吹过八千里,武当,False
 枯树的花语,武当,False
@@ -285,4 +285,3 @@ Taurus灬凉城,无尘,False
 山河是故人,玄机,False
 哲…、兮,玄机,False
 玩的是寂寞,无尘,False
-八级大,天山,False
