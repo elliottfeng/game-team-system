@@ -17,7 +17,7 @@ TEAMS_FILE = os.path.join(DATA_DIR, "teams.json")
 os.makedirs(DATA_DIR, exist_ok=True)
 
 # GitHub 配置
-GITHUB_TOKEN = "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"  # 替换为你的token
+GITHUB_TOKEN = "st.secrets["GITHUB_TOKEN"]  # 替换为你的token
 GITHUB_REPO = "elliottfeng/game-team-system"  # 替换为你的仓库名
 GITHUB_BRANCH = "main"
 
