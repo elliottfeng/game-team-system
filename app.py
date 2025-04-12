@@ -343,11 +343,11 @@ def main_page():
     
     # 提交按钮
     if st.button("✅ 确认组队"):
-        if len(selected) == 5:
+        if len(selected) > 0:  # 至少选择1人
             if create_team([captain] + selected, captain):
                 st.rerun()
         else:
-            st.error("请选择5名队员!")
+            st.error("请至少选择1名队员!")
 
 # ========================
 # 主程序
