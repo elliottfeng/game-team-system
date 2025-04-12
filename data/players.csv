@@ -26,8 +26,8 @@ Boom爆爆,大理,False
 我想娶你,大理,False
 叶问...,大理,False
 以我之名、,大理,False
-应天·栖霞散人,大理,True
-应天·玄武策士,大理,True
+应天·栖霞散人,大理,False
+应天·玄武策士,大理,False
 英英美戴子,大理,False
 袁方,大理,False
 月亮加点甜，,大理,False
@@ -68,8 +68,8 @@ Calm、,峨眉,False
 雅痞,峨眉,False
 一杯酒，敬过往,峨眉,False
 一欧系法克酱,峨眉,False
-应天·江北虎贲,峨眉,True
-应天·金陵仙子,峨眉,True
+应天·江北虎贲,峨眉,False
+应天·金陵仙子,峨眉,False
 永恒一醒,峨眉,False
 月亮想睡了、,峨眉,False
 gram问天,丐帮,False
@@ -99,7 +99,7 @@ gram问天,丐帮,False
 小明单手劈榴莲,无尘,False
 笑、文炳雕龙,无尘,True
 寻念忆亦笙,无尘,False
-应天·秦淮倦客,无尘,True
+应天·秦淮倦客,无尘,False
 烛影、,无尘,False
 子墨,无尘,False
 宸宸、,武当,False
@@ -131,7 +131,7 @@ gram问天,丐帮,False
 相见不如怀念,星宿,False
 逍遥、,星宿,False
 逸云随风了、,星宿,False
-应天·江宁护卫,星宿,True
+应天·江宁护卫,星宿,False
 清池,玄机,False
 安迪,玄机,False
 极、燕友连春,玄机,True
@@ -161,9 +161,9 @@ King、,大理,False
 情動,大理,False
 秋昆,大理,False
 煞星,大理,False
-山间风起雾散,大理,False
+山间风起雾散,大理,True
 铁桶,大理,False
-唯我独尊李仲九,大理,False
+唯我独尊李仲九,大理,True
 无玄,大理,False
 洵儿,大理,False
 叶子,大理,False
@@ -200,8 +200,8 @@ hhhhxxxxf,峨眉,False
 南鸢,峨眉,False
 胖头鱼的胖老公 ,峨眉,False
 浦城丹桂,峨眉,False
-青筱,峨眉,False
-如果没有如果,峨眉,False
+青筱,峨眉,True
+如果没有如果,峨眉,True
 十三姨,峨眉,False
 霜绛,峨眉,False
 太阳当空照、,峨眉,False
@@ -242,7 +242,7 @@ Taurus灬凉城,无尘,False
 队长别开枪是我,无尘,False
 风越大鱼越贵,无尘,False
 富春油条,无尘,False
-迦南,无尘,False
+迦南,无尘,True
 林北星,无尘,False
 没烦恼,无尘,False
 迷了晚风。,无尘,False
@@ -270,7 +270,7 @@ Taurus灬凉城,无尘,False
 我刘亦菲呀,逍遥,False
 无痕。,逍遥,False
 熙飏,逍遥,False
-依依,逍遥,False
+依依,逍遥,True
 亦儿,逍遥,False
 不游泳的鱼,星宿,False
 你凶我更凶,星宿,False
