@@ -3,6 +3,9 @@ import pandas as pd
 import hashlib
 import os
 import json
+import requests
+import base64
+from datetime import datetime
 from typing import List, Dict
 
 # ========================
@@ -13,7 +16,12 @@ PLAYERS_FILE = os.path.join(DATA_DIR, "players.csv")
 TEAMS_FILE = os.path.join(DATA_DIR, "teams.json")
 os.makedirs(DATA_DIR, exist_ok=True)
 
-# 从您的CSV中提取的职业列表
+# GitHub 配置
+GITHUB_TOKEN = "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"  # 替换为你的token
+GITHUB_REPO = "elliottfeng/game-team-system"  # 替换为你的仓库名
+GITHUB_BRANCH = "main"
+
+# 游戏职业列表
 GAME_CLASSES = [
     '大理', '峨眉', '丐帮', '明教', '天山',
     '无尘', '武当', '逍遥', '星宿', '玄机'
@@ -22,46 +30,91 @@ GAME_CLASSES = [
 ADMIN_PASSWORD_HASH = hashlib.sha256("admin123".encode()).hexdigest()
 
 # ========================
-# 数据持久化模块
+# GitHub 持久化模块
 # ========================
-def load_players() -> pd.DataFrame:
-    """安全加载玩家数据"""
+def update_github_file(file_path: str, content: str, message: str):
+    """通过GitHub API更新文件"""
     try:
-        if os.path.exists(PLAYERS_FILE):
-            df = pd.read_csv(PLAYERS_FILE, encoding='utf-8-sig')
-            
-            # 验证数据完整性
-            required_cols = {'游戏ID', '游戏职业'}
-            if not required_cols.issubset(df.columns):
-                st.error("CSV文件缺少必要列！")
-                return pd.DataFrame(columns=['游戏ID', '游戏职业', '已选择'])
-            
+        headers = {
+            "Authorization": f"token {GITHUB_TOKEN}",
+            "Accept": "application/vnd.github.v3+json"
+        }
+        
+        # 1. 获取文件当前SHA（必须）
+        url = f"https://api.github.com/repos/{GITHUB_REPO}/contents/{file_path}"
+        response = requests.get(url, headers=headers)
+        sha = response.json().get("sha", "") if response.status_code == 200 else ""
+        
+        # 2. 更新文件
+        data = {
+            "message": message,
+            "content": base64.b64encode(content.encode("utf-8")).decode("utf-8"),
+            "sha": sha,
+            "branch": GITHUB_BRANCH
+        }
+        response = requests.put(url, headers=headers, json=data)
+        
+        if response.status_code not in [200, 201]:
+            st.error(f"GitHub同步失败: {response.json().get('message', '未知错误')}")
+            return False
+        return True
+    except Exception as e:
+        st.error(f"GitHub同步异常: {str(e)}")
+        return False
+
+def save_data_to_github():
+    """保存所有数据到GitHub"""
+    # 保存players.csv
+    players_csv = st.session_state.players.to_csv(index=False, encoding='utf-8-sig')
+    if not update_github_file(PLAYERS_FILE, players_csv, "Update players data"):
+        return False
+    
+    # 保存teams.json
+    teams_json = json.dumps(st.session_state.teams, ensure_ascii=False, indent=2)
+    if not update_github_file(TEAMS_FILE, teams_json, "Update teams data"):
+        return False
+    
+    st.success("数据已同步到GitHub!")
+    return True
+
+# ========================
+# 数据加载模块
+# ========================
+def load_from_github(file_path: str):
+    """从GitHub加载文件内容"""
+    try:
+        url = f"https://raw.githubusercontent.com/{GITHUB_REPO}/{GITHUB_BRANCH}/{file_path}"
+        response = requests.get(url)
+        if response.status_code == 200:
+            return response.text
+    except Exception as e:
+        st.error(f"加载{file_path}失败: {str(e)}")
+    return None
+
+def load_players() -> pd.DataFrame:
+    """加载玩家数据"""
+    content = load_from_github(PLAYERS_FILE)
+    if content:
+        try:
+            df = pd.read_csv(io.StringIO(content))
             if '已选择' not in df.columns:
                 df['已选择'] = False
-                
             return df
-    except Exception as e:
-        st.error(f"加载玩家数据失败: {str(e)}")
+        except Exception as e:
+            st.error(f"解析玩家数据失败: {str(e)}")
+    
+    # 默认数据
     return pd.DataFrame(columns=['游戏ID', '游戏职业', '已选择'])
 
 def load_teams() -> List[Dict]:
     """加载队伍数据"""
-    try:
-        if os.path.exists(TEAMS_FILE):
-            with open(TEAMS_FILE, 'r', encoding='utf-8') as f:
-                return json.load(f)
-    except Exception as e:
-        st.error(f"加载队伍数据失败: {str(e)}")
+    content = load_from_github(TEAMS_FILE)
+    if content:
+        try:
+            return json.loads(content)
+        except Exception as e:
+            st.error(f"解析队伍数据失败: {str(e)}")
     return []
-
-def save_data():
-    """保存所有数据"""
-    try:
-        st.session_state.players.to_csv(PLAYERS_FILE, index=False, encoding='utf-8-sig')
-        with open(TEAMS_FILE, 'w', encoding='utf-8') as f:
-            json.dump(st.session_state.teams, f, ensure_ascii=False)
-    except Exception as e:
-        st.error(f"保存数据失败: {str(e)}")
 
 # ========================
 # 核心功能模块
@@ -119,10 +172,12 @@ def create_team(team_members: List[str], captain: str) -> bool:
         # 更新选择状态
         mask = st.session_state.players['游戏ID'].isin(team_members)
         st.session_state.players.loc[mask, '已选择'] = True
-        save_data()
         
-        st.success("组队成功!")
-        return True
+        # 同步到GitHub
+        if save_data_to_github():
+            st.success("组队成功!")
+            return True
+        return False
     except Exception as e:
         st.error(f"组队失败: {str(e)}")
         return False
@@ -157,9 +212,8 @@ def admin_panel():
                         [st.session_state.players, new_player], 
                         ignore_index=True
                     )
-                    save_data()
-                    st.success(f"已添加: {new_id}")
-                    st.rerun()
+                    if save_data_to_github():
+                        st.rerun()
         
         # 玩家列表编辑
         st.subheader("当前玩家")
@@ -175,13 +229,11 @@ def admin_panel():
         
         if st.button("保存修改"):
             st.session_state.players = edited_df
-            save_data()
-            st.success("已保存!")
+            save_data_to_github()
         
         if st.button("重置选择状态"):
             st.session_state.players['已选择'] = False
-            save_data()
-            st.success("已重置!")
+            save_data_to_github()
     
     with tab2:
         st.subheader("队伍管理")
@@ -218,7 +270,7 @@ def admin_panel():
                         
                         # 移除队伍
                         st.session_state.teams.pop(i-1)
-                        save_data()
+                        save_data_to_github()
                         st.rerun()
                     except Exception as e:
                         st.error(f"解散队伍失败: {str(e)}")
