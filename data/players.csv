@@ -1,6 +1,6 @@
 游戏ID,游戏职业,已选择
 玖伍贰柒,大理,False
-素手挽清风,大理,False
+素手挽清风,大理,True
 Boom爆爆,大理,True
 不摆烂的人,大理,False
 朝Zhao歌。,大理,False
@@ -55,7 +55,7 @@ Calm、,峨眉,False
 芊凝。,峨眉,True
 悄悄,峨眉,False
 情、烛光淡夜,峨眉,True
-若兮、,峨眉,False
+若兮、,峨眉,True
 鲨鱼大海,峨眉,False
 山水有相逢,峨眉,False
 时光丨同学,峨眉,True
@@ -78,13 +78,13 @@ gram问天,丐帮,False
 二两桃花,明教,True
 天真无邪。,明教,True
 无敌是我是无敌,明教,False
-紫龙王,巧帮,False
+紫龙王,巧帮,True
 冬瓜子,天山,False
 朗朗、,天山,False
 魔_神,天山,False
 入骨相思知不知,天山,False
 扇扇扇耳光,天山,False
-俗啪海派泡泡龙,天山,False
+俗啪海派泡泡龙,天山,True
 一俄系乌拉酱,天山,False
 被被,无尘,False
 大碗饭,无尘,False
@@ -108,7 +108,7 @@ gram问天,丐帮,False
 花鬼,武当,False
 酒酣乱迷情,武当,False
 佬鬼,武当,False
-柠檬少年薄荷心,武当,False
+柠檬少年薄荷心,武当,True
 殇惆,武当,False
 糖兜·,武当,False
 卧龙、,武当,False
@@ -126,7 +126,7 @@ gram问天,丐帮,False
 恩赐解脱。,星宿,False
 酒香漫四海,星宿,False
 懒虫起床了、,星宿,True
-摩雾绕空山、,星宿,False
+摩雾绕空山、,星宿,True
 希希、,星宿,True
 相见不如怀念,星宿,False
 逍遥、,星宿,False
